@@ -1,14 +1,412 @@
-body {
+*{ margin: 0;
+  padding: 0;}
+body{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:#066fbe
 }
-
+.magins{margin-top: 0 !important;}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.App{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-auto-rows:1fr 1fr 10fr 1fr;
+  grid-template-columns: 1fr 1fr 10fr 1fr; 
+  grid-template-areas: "header header header header"
+                        "sidebar sidebar main main"
+                        "sidebar sidebar main main"
+                        "sidebar sidebar main main"
+                        "sidebar sidebar main main"
+                        "foot foot foot foot"
+}
+@media only screen and (max-width: 997px) {
+  .App {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-auto-rows:1fr 1fr 10fr 1fr;
+    grid-template-columns: 1fr 1fr 10fr 1fr; 
+    grid-template-areas: "header header header header"
+                          "main main main main"
+                          "main main main main"
+                          "main main main main"
+                          "main main main main"
+                          "foot foot foot foot"
+  }
+}
+
+@media only screen and (max-width: 997px) {
+  .Sidebar{
+    display:none;
+    
+  }
+}
+
+@media only screen and (max-width: 997px) {
+  .bv{
+    display:none !important;
+    
+  }
+}
+
+.header{grid-area: header;}
+.Sidebar{grid-area: sidebar;background:linear-gradient(to bottom right,
+  rgba(43, 6, 65, 0.733),
+  #066fbe)}
+  
+
+.Main{grid-area: main;overflow: scroll;}
+.Footer{grid-area: foot;background-color: rgba(28, 8, 119, 0.363);color: white;height: 100px;}
+.foots{
+  font-size:20px !important;
+  font-weight: 20px;
+  margin-top: 50px;
+}
+.hero-img{background-attachment: fixed;
+background-position: center;background-repeat: no-repeat;
+block-size: cover;min-height: 100%;position: relative;opacity: 0.70;}
+
+     .img-flluid{display: flex;justify-content: center;
+      align-items: center;height: 600px;background-repeat: none;
+      background-image:linear-gradient(to bottom right,
+      #066fbe,
+      rgba(50, 10, 73, 0.733)), 
+      url(./img/venice-italy-gritti-palace-1606928_1920.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      block-size: cover;}
+      .hero-text h1 ,h4{text-align: center;
+        margin: auto;font-size: 100px;color: whitesmoke;
+      animation-name: heroText; animation-delay: 10s ;}
+        @keyframes heroText{
+          0%{
+            opacity: 0;
+            transform: translateX(-100px)
+          }
+         100% {
+                 opacity: 1;
+                 transform: translate(-100px)
+          }
+        }
+        .after{display: flex;max-width: 500px;}
+     .text{display: flex;justify-content: center;
+       background-color: chocolate;background-clip: border-box;}
+      .text1{text-align: center;
+        margin: auto;font-size: 100px;color: white;
+        }
+
+         
+      
+         
+            .covs{
+              background:linear-gradient(to bottom right,
+              rgb(152, 192, 145),
+              rgba(152, 192, 145))
+              
+            } 
+           
+            .skewbox{
+              background: #edff57;
+              padding: 100px 0;
+              transform: skew(0deg,-5deg)translateY(-4px);
+              display: flex;justify-content: center;
+      align-items: center;background-repeat: none;
+      background-attachment: fixed;
+    height: 70px;
+
+            }
+            .ske{background:linear-gradient(to bottom right,
+              rgb(152, 192, 145),
+              rgb(23, 66, 15))}
+            .containers{
+              padding: 44px;
+              transform: skew(10deg,5deg);
+              
+     
+            }
+            .hero-text,.btn,h5{color: white;text-align: center;
+              margin: auto;
+              text-transform: uppercase;
+             
+             }
+           
+             .particles {
+              display: flex;justify-content: flex-end;
+              align-items: center;
+             background:  linear-gradient(to bottom right,
+      #f51313,
+      rgba(15, 0, 24, 0.733),rgba(252, 59, 59, 0.733),rgba(1, 3, 92, 0.733))
+      ;height: 200px;
+      color: white;
+            }
+            .Sidebarz{
+              margin-top: 20px;
+              margin-left: 1px;
+              color: azure;
+              font-size: 20px;
+              letter-spacing: normal;
+              cursor: pointer;
+            }
+            .Sidebarz1{
+            margin-top: 0;
+              margin-left: 1px;
+              color: azure;
+              font-size: 20px;
+              letter-spacing: normal;
+              cursor: pointer;
+            }
+
+            .Sidebarzs{margin-top: 50px;text-align: center;}
+            
+            .Sidebarz:hover{
+              color:white;
+             text-transform: capitalize;
+            
+             margin-right: -10px;
+              
+            }
+            .Sidebarz1:hover{
+              color:white;
+             text-transform: capitalize;
+            
+             margin-right: -10px;
+              
+            }
+            *{margin: 0;padding: 0;}
+           
+            .Sidebarz2{
+              margin-top: 0;
+                margin-left: 1px;
+                color: azure;
+                font-size: 20px;
+                letter-spacing: normal;
+                cursor: pointer;
+              }
+  
+              .Sidebarz2:hover{
+                color:white;
+               text-transform: capitalize;
+               
+               margin-right: -10px;
+                
+              }
+
+              .Sidebarz3{
+                margin-top: 0;
+                  margin-left: 1px;
+                  color: azure;
+                  font-size: 20px;
+                  letter-spacing: normal;
+                  cursor: pointer;
+                }
+    
+                .Sidebarz3:hover{
+                  color:white;
+                 text-transform: capitalize;
+                
+                 margin-right: -10px;
+                  
+                }
+
+                .Sidebarz4{
+                  margin-top: 0;
+                    margin-left: 1px;
+                    color: azure;
+                    font-size: 20px;
+                    letter-spacing: normal;
+                    cursor: pointer;
+                  }
+      
+                  .Sidebarz4:hover{
+                    color:white;
+                   text-transform: capitalize;
+                  
+                   margin-right: -10px;
+                    
+                  }
+
+                  .Sidebarz5{
+                    margin-top: 0;
+                      margin-left: 1px;
+                      color: azure;
+                      font-size: 20px;
+                      letter-spacing: normal;
+                      cursor: pointer;
+                    }
+        
+                    .Sidebarz5:hover{
+                      color:white;
+                     text-transform: capitalize;
+                     
+                     margin-right: -10px;
+                      
+                    }
+
+                    .Sidebarz6{
+                      margin-top: 0;
+                        margin-left: 1px;
+                        color: azure;
+                        font-size: 20px;
+                        letter-spacing: normal;
+                        cursor: pointer;
+                      }
+          
+                      .Sidebarz6:hover{
+                        color:white;
+                       text-transform: capitalize;
+                      
+                       margin-right: -10px;
+                        
+                      }
+                      .myown{
+                        background:linear-gradient(to bottom right,
+                        #3949ab,
+                        rgba(43, 6, 65, 0.733)),   url(img\manager-1507506_1920.jpg);
+                       
+      background-repeat: no-repeat;
+                       display:flex;
+                       justify-content: center;
+                       justify-items: center;
+                        margin: auto;
+                        align-items: center;
+                        height:400px;
+                       width:100%;
+                        -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+                      }
+                    /*  @media only screen and (min-width: 1200px) {
+                        .b{
+                          width:1257px;
+                          
+                        }
+                      }
+                      @media only screen and (max-width: 1257px) {
+                        .b{
+                          width:1257px;
+                          
+                        }
+                      }
+                     */
+                      .hotelonsmall{
+                       width: 231px;
+                        height:360px;
+                        padding-top: 10px;
+                        margin-top: 10px;
+                        padding-left: 6px;
+                        margin-left: 10px;
+                        color:rgba(17, 14, 14, 0.856);
+                        font-size: 20px;
+                        cursor: pointer;
+
+                      }
+                      .hotelonsmallll:hover{
+                        text-decoration: underline;
+                        transform: translate(20px);
+                      color: #75C6BF
+                      }
+                      .hotelonsmalll:hover{
+                        text-decoration: underline;
+                        transform: translate(25px);
+                      color: #75C6BF
+                      }
+                      .hotelonsmalllll:hover{
+                        text-decoration: underline;
+                        transform: translateX(45px);
+                      color: #75C6BF
+                      }
+                      .headbtn{
+                        margin-left: 20px;
+                      }
+                 
+                      @media only screen and (max-width: 911px) {
+                        .myown{
+                          background:linear-gradient(to bottom right,
+                        #3949ab,
+                        rgba(43, 6, 65, 0.733)),   url(img\manager-1507506_1920.jpg);
+                       
+      background-repeat: no-repeat;
+                       display:flex;
+                       justify-content: center;
+                       justify-items: center;
+                        margin: auto;
+                        align-items: center;
+                        height:400px;
+                       width:100%;
+                       
+
+                        -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+                        }
+                      }
+                     
+                      .after{border-radius: 50%;width:100%;height: 100px;display:flex;justify-content: center;justify-items: center;align-content: center;align-items: center;overflow: hidden;}
+                  .brand-log{
+                    transition: headlogoframe 1s infinite;
+                    background-color: red;
+ height: 100px;
+ width: 100px;
+ /*transition: height 500ms, width 5s;*/
+animation:  animit 1s infinite;
+display: flex;
+justify-content: center;align-items: center;
+border-radius: 50%
+                  }
+                  @keyframes headlogoframe{
+
+                    0%{
+                      opacity: 0;
+                    }
+                    100%{
+                      opacity: 1;
+                      top:600px;
+                       transform:translateX(10px)rotateX(880deg);
+                    }
+                  }
+                 /* cubic-bezier(0, 0.4, 0.15, 0.93)*/
+                  .anim{
+                     animation: about 1s cubic-bezier(0, 0.4, 0.15, 0.93) infinite;
+                  }
+                  @keyframes about{
+                    0%{
+                      transform: rotate(0deg)
+                    }
+                    60%{
+                      opacity: 0;
+                    }
+                    100%{
+                      transform: rotate(360deg) 
+                    }
+                  }
+                  .headani{
+                    animation: ad 4s ease forwards;
+                  }
+                  @keyframes ad{
+                    0%{
+                      transform: translateY(200px)
+                    }
+
+                    100%{
+                      transform: translateY(1)
+                    }
+                  }
+                  .log{animation: lg 1s 0ms ease-out forwards infinite; transform-origin: center;display: inline-block;}
+                  @keyframes lg{
+                    0%{
+transform: rotate(80deg) translateX(-3px)
+                    }
+                   
+100%{
+  transform: rotate(360deg)
+}
+                  }

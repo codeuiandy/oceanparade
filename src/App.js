@@ -1,26 +1,54 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+//import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
+import './index.css';
+import 'materialize-css/dist/css/materialize.min.css';
+//import EditTodo from "./pages/editTodo";
+//import CreateTodo from "./pages/createTodo";
+//import TodoList from "./pages/Todo";
+import Header from "./pages/Header";
+import Sidebar from "./pages/Sidebar";
+import Main from "./pages/Main";
+import Footer from "./pages/Footer";
+import Aboutme from './pages/Aboutme'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-function App() {
+class App extends Component  {
+  render(){
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+    
+    
+    <div className="header">
+    <Header/>
+    
     </div>
-  );
-}
 
+    <div className="Sidebar ">
+    <Sidebar/>
+    </div>
+   
+    <div className="Main">
+
+    
+    
+    <Main/>
+    </div>
+    
+
+    <div className="Footer">
+      
+    <Footer/>
+    
+    
+    </div>
+    
+    
+    </div>
+   
+   )
+}
+}
 export default App;

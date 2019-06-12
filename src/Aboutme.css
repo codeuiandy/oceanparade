@@ -1,0 +1,32 @@
+
+.aboutmeimg{
+  animation:tmeimg 688ms ease-in forwards; 
+}
+@keyframes tmeimg{
+  0%{
+    transform: translateX(-900px)
+    ;opacity: 0;
+  }
+
+  100%{
+    transform: translateX(0)
+  }
+}
+.aboutimgtext{
+  animation: textx 888ms ease forwards;font-size: 17px;height: 40px;line-height: 25px;
+  color: white;
+}
+@keyframes textx{
+  0%{
+transform: translateY(900px);
+opacity: 0;
+  }
+
+  100%{
+    transform: translateY(1)
+  }
+}
+.mvp{
+  height: 500px !important;
+  width: 100%;
+}

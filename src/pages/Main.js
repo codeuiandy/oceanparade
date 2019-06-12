@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import Particles from 'react-particles-js';
+
 import '../index.css';
 import imgs from "../img/venice-italy-gritti-palace-1606928_1920.jpg"
 import imges from "../img/hotel-1209021.jpg"
@@ -14,8 +14,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import M from "materialize-css";
 
 
-let imgss= imgs;
-let imgsss=imges;
+
 const style={color:"green",
 width:"200px", backgroundColor:"yellow"}
 

@@ -331,7 +331,7 @@ clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%,
                         padding-top: 10px;
                         margin-top: 10px;
                         padding-left: 6px;
-                        margin-left: 10px;
+                        
                         color:rgba(17, 14, 14, 0.856);
                         font-size: 20px;
                         cursor: pointer;
@@ -432,6 +432,27 @@ border-radius: 50%
                     0%{
 transform: rotate(0deg)
                     }
+                    50%{
+                      color: rgba(224, 43, 43, 0.513)
+                    }
+                    60%{
+                      color: orange
+                    }
+                    70%{
+                      color: rgb(255, 0, 149)
+                    }
+                    80%{
+                      color: orange
+                    }
+                    90%{
+                      color: rgb(208, 255, 0)
+                    }
+                    95%{
+                      color: green
+                    }
+                    97%{
+                      color: rgb(131, 0, 131)
+                    }
                    
 100%{
   transform: rotate(360deg)
@@ -439,7 +460,7 @@ transform: rotate(0deg)
                   }
                  
                   .logsh{
-                    animation: logsb 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;margin-left: 10px;font-size: 10px!important
+                    animation: logsb 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;font-size: 10px!important
                   }
                   
                   @keyframes logsb{
@@ -450,7 +471,7 @@ transform: rotate(0deg)
                     }
                   }
                   .logshv{
-                    animation: logsv 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;margin-left: 10px;font-size: 10px!important
+                    animation: logsv 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;font-size: 10px!important
                   }
                   
                   @keyframes logsv{
@@ -461,7 +482,7 @@ transform: rotate(0deg)
                   }
 
                   .logshvv{
-                    animation: logsvv 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;margin-left: 10px;font-size: 10px!important
+                    animation: logsvv 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;font-size: 10px!important
                   }
                   
                   @keyframes logsvv{
@@ -477,3 +498,14 @@ transform: rotate(0deg)
                     }
                   }
                   .logx{font-size: 20px!important;}
+                  .homeani{
+                    animation: homa 2s ease forwards
+                  }
+                  @keyframes homa{
+                    0%{
+                    transform: translateY(900px)
+                    }
+                    100%{
+                      transform: translateY(0)
+                      }
+                  }

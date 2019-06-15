@@ -72,6 +72,33 @@ code {
   font-weight: 20px;
   margin-top: 50px;
 }
+@media only screen and (min-width: 557px) {
+  .headingtext{
+    font-size: 90px!important;
+    
+  }
+}
+@media only screen and (max-width: 556px) {
+  .headingtext{
+    font-size: 50px!important;
+    
+  }
+}
+
+@media only screen and (min-width: 557px) {
+  .headingtextsub{
+    font-size: 40px!important;
+    
+  }
+}
+@media only screen and (max-width: 556px) {
+  .headingtextsub{
+    font-size: 20px!important;
+    
+  }
+}
+
+.headingtext{font-size: 60px}
 .hero-img{background-attachment: fixed;
 background-position: center;background-repeat: no-repeat;
 block-size: cover;min-height: 100%;position: relative;opacity: 0.70;}
@@ -400,7 +427,7 @@ border-radius: 50%
                       transform: translateY(1)
                     }
                   }
-                  .log{animation: lg 1s 0ms ease-out forwards infinite; transform-origin: center;display: inline-block;}
+                  .log{animation: lg 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;}
                   @keyframes lg{
                     0%{
 transform: rotate(80deg) translateX(-3px)
@@ -410,3 +437,55 @@ transform: rotate(80deg) translateX(-3px)
   transform: rotate(360deg)
 }
                   }
+                  .homeani{
+                    animation: homa 2s ease forwards 
+                  }
+                  @keyframes homa{
+                    0%{
+                      transform: translateY(800px)
+                    }
+
+                    110%{
+                      transform: translateY(0)
+                    }
+                  }
+                  
+                  .logsh{
+                    animation: logsb 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;margin-left: 10px;font-size: 10px!important
+                  }
+                  
+                  @keyframes logsb{
+                    0%{transform: translateY(0)}
+                    50%{transform: translateX(30px)}
+                    100%{
+                      transform: translateY(30px)
+                    }
+                  }
+                  .logshv{
+                    animation: logsv 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;margin-left: 10px;font-size: 10px!important
+                  }
+                  
+                  @keyframes logsv{
+                    0%{transform: rotate(0deg)}
+                    100%{
+                      transform: rotate(-360deg)
+                    }
+                  }
+
+                  .logshvv{
+                    animation: logsvv 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;margin-left: 10px;font-size: 10px!important
+                  }
+                  
+                  @keyframes logsvv{
+                    
+                    0%{
+                      transform: translateY(-30px)
+                    }
+                    50%{
+                      transform: translateX(80px)
+                    }
+                    100%{
+                      transform: rotate(-360deg)
+                    }
+                  }
+                  .logx{font-size: 20px!important;}

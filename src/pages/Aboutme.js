@@ -18,7 +18,7 @@ render(){
             <Header/>
             
             <h1 className="">
-              <div className="container ">
+              <div className="container n">
                   <div className="row">
                       <div className="col s12 m6 l6 xl6 about aboutmeimg">
                         <img className="responsive-img mvp" src={img}/>
@@ -33,7 +33,8 @@ render(){
 
               </div>
             </h1>
-            
+            <br/>
+            <br/>
         </div>
     )
 }

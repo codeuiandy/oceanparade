@@ -69,8 +69,8 @@ class Form extends Component{
     <div className="col s12">
       <ul className="tabs #1a237e indigo white-text darken-4">
         <li className="tab col s3"><a className="active white-text flow-text" href="#test1">Welcome {}{ this.state.visitor}</a></li>
-        <li className="tab col s3"><a  href="#test2">book Us</a></li>
-        <li className="tab col s3 "><a href="#test3">{this.state.visitor} Summarry{}</a></li>
+        <li className={"tab col s3 "+(this.state.visitor.length<5?"disabled":"")}><a  href="#test2">book Us</a></li>
+        <li className={"tab col s3 "+(this.state.change2.length==""?"disabled":"")}><a href="#test3">{this.state.visitor} Summarry{}</a></li>
        
       </ul>
     </div>
@@ -86,7 +86,7 @@ class Form extends Component{
           {this.state.message}
         </div>
       </div>
-      <button className="btn center-align waves-red waves-effect waves-darken b">Submit</button>
+      <button className={"btn center-align waves-red waves-effect waves-darken b "+(this.state.visitor.length<5?"disabled":""  )  }>Submit</button>
     </form>
   </div>
    

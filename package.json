@@ -4,15 +4,11 @@
   "private": true,
   "dependencies": {
     "materialize-css": "^1.0.0-rc.2",
-    
     "react": "^16.8.6",
+    "react-alertify-js": "0.0.1",
     "react-dom": "^16.8.6",
-    
     "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.0",
-    
-    "react-spring": "^8.0.20"
-    
+    "react-scripts": "3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -27,7 +27,8 @@ render(){
            
            <nav className="nav-wrapper z-depth-5 #3949ab indigo darken-1">
            <div className="container">
-           <a onMouseEnter={this.handle} className="brand-logo logx left"><span className="logshvv">O</span><span className="logsh">O</span><span className="logshv">O</span>cean parade</a>
+           <a onMouseEnter={this.handle} className="brand-logo logx left"><span className="logshvv
+           ">O</span><span className="logsh">O</span><span className="logshv">O</span>cean parade</a>
            <a className="sidenav-trigger btn-floating right pulse z-depth-5" data-target="mobile-links"><i className="material-icons blue white-text">stay_current_portrait
 
 </i></a>

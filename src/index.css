@@ -427,29 +427,17 @@ border-radius: 50%
                       transform: translateY(1)
                     }
                   }
-                  .log{animation: lg 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;}
+                  .log{animation: lg 1s ease  infinite; transform-origin: center;display: inline-block;padding-left: 30px;}
                   @keyframes lg{
                     0%{
-transform: rotate(80deg) translateX(-3px)
+transform: rotate(0deg)
                     }
                    
 100%{
   transform: rotate(360deg)
 }
                   }
-                  .homeani{
-                    animation: homa 2s ease forwards 
-                  }
-                  @keyframes homa{
-                    0%{
-                      transform: translateY(800px)
-                    }
-
-                    110%{
-                      transform: translateY(0)
-                    }
-                  }
-                  
+                 
                   .logsh{
                     animation: logsb 1s 0ms ease-out  infinite; transform-origin: center;display: inline-block;padding-left: 30px;margin-left: 10px;font-size: 10px!important
                   }
